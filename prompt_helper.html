@@ -8,17 +8,20 @@
 </head>
 <body>
 
-<form action="/prompt_result.php">
+<form action="/prompt_result.php" method="post">
+
   <div class="mb-3">
     <label for="subject" class="form-label">Name of your subject</label>
-    <input type="text" class="form-control" id="prim_sub" aria-describedby="subject_help">
+    <input type="text" name="primary" class="form-control" id="prim_sub" aria-describedby="subject_help"> <!--add name function -->
     <div id="subject_help" class="form-text">Type here the name of your primary subject. Eg: Cat, dog, car, etc...</div>
   </div>
+  
   <div class="mb-3">
     <label for="secondary_subject" class="form-label">Name of secondary subject</label>
     <input type="text" class="form-control" id="secondary_subject">
     <div id="2nd_subject_help" class="form-text">Secondary subject includes objects that has supporting role besides your primary one.</div>
   </div>
+  
   <div class="mb-3">
     <label for="background" class="form-label">Specify backdrop looks</label>
     <input type="text" class="form-control" id="prim_sub" aria-describedby="subject_help">
@@ -780,6 +783,240 @@
 </div>
 </div>
 
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Punk Looks</label>
+  <div class="colored" style="width:200px;">     
+    <select name="punl" id="punklooks">
+      <option value="">None</option>
+      <option value="Neon">Neon</option>
+      <option value="pink">pink</option>
+      <option value="vaporwave">vaporwave</option>
+      <option value="blue">blue</option>
+      <option value="geometric">geometric</option>
+      <option value="futuristic">futuristic</option>
+      <option value="80s">80s</option>
+      <option value="post-apocalyptic">post-apocalyptic</option>
+      <option value="grey">grey</option>
+      <option value="desolate">desolate</option>
+      <option value="fire">fire</option>
+      <option value="decay">decay</option>
+      <option value="gothic">gothic</option>
+      <option value="fantasy">fantasy</option>
+      <option value="stone">stone</option>
+      <option value="dark">dark</option>
+      <option value="lush">lush</option>
+      <option value="nature">nature</option>
+      <option value="mist">mist</option>
+      <option value="mystery">mystery</option>
+      <option value="angular">angular</option>
+      <option value="cybernetic">cybernetic</option>
+      <option value="sci-fi">sci-fi</option>
+      <option value="glows">glows</option>
+      <option value="greens">greens</option>
+      <option value="metals">metals</option>
+      <option value="armor">armor</option>
+      <option value="chrome">chrome</option>
+      <option value="steampunk">steampunk</option>
+      <option value="brass">brass</option>
+      <option value="victoriana">victoriana</option>
+      <option value="memphis">memphis</option>
+      <option value="bold">bold</option>
+      <option value="kitch">kitch</option>
+      <option value="colorful">colorful</option>
+      <option value="shapes">shapes</option>
+      <option value="dieselpunk">dieselpunk</option>
+      <option value="grimy">grimy</option>
+      <option value="steel">steel</option>
+      <option value="oil">oil</option>
+      <option value="mechanised">mechanised</option>
+      <option value="afrofuturism">afrofuturism</option>
+      <option value="african">african</option>
+      <option value="cyberbunkk">cyberbunkk</option>
+      <option value="dyed hair">dyed hair</option>
+      <option value="spiky">spiky</option>
+      <option value="biopunk">biopunk</option>
+      <option value="slimes">slimes</option>
+      <option value="weird">weird</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Photography</label> <br> <br>
+<label for="background" class="form-label">Proximity</label> <br>
+  <div class="colored" style="width:200px;">     
+    <select name="prox" id="proximity">
+      <option value="">None</option>
+      <option value="Extreme close-up">Extreme close-up</option>
+      <option value="close-up">close-up</option>
+      <option value="medium shot">medium shot</option>
+      <option value="midshot">midshot</option>
+      <option value="waist shot">waist shot</option>
+      <option value="long shot">long shot</option>
+      <option value="wide shot">wide shot</option>
+      <option value="full shot">full shot</option>
+      <option value="extreme lomg shot">extreme long shot</option>
+      <option value="extreme wide shot">extreme wide shot</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Position</label>
+  <div class="colored" style="width:200px;">     
+    <select name="pos" id="position">
+      <option value="">None</option>
+      <option value="Overhead view">Overhead view</option>
+      <option value="establishing shot">establishing shot</option>
+      <option value="from above">from above</option>
+      <option value="high angle">high angle</option>
+      <option value="crane shot">crane shot</option>
+      <option value="low angle">low angle</option>
+      <option value="from below">from below</option>
+      <option value="worm-eye-view">worm-eye-view</option>
+      <option value="aerial view">aerial view</option>
+      <option value="birds eye view">birds eye view</option>
+      <option value="drone photography">drone photography</option>
+      <option value="dutch angle">dutch angle</option>
+      <option value="skewed shot">skewed shot</option>
+      <option value="over-shoulder-shot">over-shoulder-shot</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Lense type</label>
+  <div class="colored" style="width:200px;">     
+    <select name="lense" id="lense_type">
+      <option value="">None</option> 
+      <option value=" Fast shutter speed">Fast shutter speed</option>
+      <option value=" slow shutter speed">slow shutter speed</option>
+      <option value=" bokeh">bokeh</option>
+      <option value=" action photo">action photo</option>
+      <option value=" long exposure">long exposure</option>
+      <option value=" shallow depth of field">shallow depth of field</option>
+      <option value=" blur">blur</option>
+      <option value=" out of focus background">out of focus background</option>
+      <option value=" tilt shift photography">tilt shift photography</option>
+      <option value=" motion blur">motion blur</option>
+      <option value=" telephoto lens">telephoto lens</option>
+      <option value=" sigma 500mm f/5 shot">sigma 500mm f/5 shot</option>
+      <option value=" macro lens">macro lens</option>
+      <option value=" sigma 105mm f.8">sigma 105mm f.8</option>
+      <option value=" wide angle lens">wide angle lens</option>
+      <option value=" 15mm">15mm</option>
+      <option value=" fish-eye lens">fish-eye lens</option>
+      <option value=" deep depth of field">deep depth of field</option>
+      <option value=" 35mm">35mm</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Natural Lightning</label>
+  <div class="colored" style="width:200px;">     
+    <select name="light" id="lightning">
+      <option value="">None</option> 
+      <option value=" Golden hour">Goden h our</option>
+      <option value=" dusk">dusk</option>
+      <option value=" sunset">sunset</option>
+      <option value=" sunrise">sunrise</option>
+      <option value=" warm lightning"warm lightning></option>
+      <option value=" warm lightning"></option>
+      <option value=" strong shadow">strong shadow</option>
+      <option value=" blue hour">blue hour</option>
+      <option value=" twilight">twilight</option>
+      <option value=" cool">cool</option>
+      <option value=" ISO1200">ISO1200</option>
+      <option value=" midday">midday</option>
+      <option value=" harsh overhead sunlight">harsh overhead sunlight</option>
+      <option value=" directional sunlight">directional sunlight</option>
+      <option value=" overcast">overcast</option>
+      <option value=" flat lightning">flat lightning</option>
+      <option value=" shadow and silhouette">shadow and silhouette</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Artificial Lightning</label>
+  <div class="colored" style="width:200px;">     
+    <select name="artlit" id="artificial_lightning">
+      <option value="">None</option>
+      <option value="Warm lightning">Warm lightning</option>
+      <option value="2700k">2700k</option>
+      <option value="cold lightning">cold lightning</option>
+      <option value="flourescent lightning">flourescent lightning</option>
+      <option value="4800k">4800k</option>
+      <option value="flash photography">flash photography</option>
+      <option value="harsh flash">harsh flash</option>
+      <option value="colorful lightning">colorful lightning</option>
+      <option value="neutral">neutral</option>
+      <option value="flat">flat</option>
+      <option value="corporate">corporate</option>
+      <option value="professional">professional</option>
+      <option value="ambient">ambient</option>
+      <option value="low key lightning">low key lightning</option>
+      <option value="dramatic">dramatic</option>
+      <option value="single">single</option>
+      <option value="high-contrast">high-contrast</option>
+      <option value="backlightning">backlightning</option>
+      <option value="backlit">backlit</option>
+      <option value="studio portrait">studio portrait</option>
+      <option value="well-lit">well-lit</option>
+      <option value="lit from above">lit from above</option>
+      <option value="lit from below">lit from below</option>
+    </select>
+  </div> 
+</div>
+</div>
+
+<div class="mb-3">
+<div class="dropdown">
+<label for="background" class="form-label">Film Types</label>
+  <div class="colored" style="width:200px;">     
+    <select name="film" id="film_types">
+      <option value="">None</option>
+      <option value="Kodachrome">Kodachrome</option>
+      <option value="autochrome">autochrome</option>
+      <option value="lomography">lomography</option>
+      <option value="polaroid">polaroid</option>
+      <option value="instax">instax</option>
+      <option value="cameraphone">cameraphone</option>
+      <option value="cctv">cctv</option>
+      <option value="security footage">security footage</option>
+      <option value="disposable camera">disposable camera</option>
+      <option value="daguerrotype">daguerrotype</option>
+      <option value="very early film stock">very early film stock</option>
+      <option value="camera obscura">camera obscura</option>
+      <option value="pinhole photography">pinhole photography</option>
+      <option value="double exposure">double exposure</option>
+      <option value="cyanotype">cyanotype</option>
+      <option value="black and white">black and white</option>
+      <option value="Tri-X 400TX">Tri-X 400TX</option>
+      <option value="Redscale photography">Redscale photography</option>
+      <option value="infrared photography">infrared photography</option>
+      <option value="instagram">instagram</option>
+      <option value="hipstamatic">hipstamatic</option>
+      <option value="contact sheet">contact sheet</option>
+      <option value="colour splash">colour splash</option>
+      <option value="solarised">solarised</option>
+      <option value="anaglyph">anaglyph</option>
+    </select>
+  </div> 
+</div>
+</div>
 
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
