@@ -1,33 +1,10 @@
 <html>
+
 <body>
-<h2>Prompt Result page </h2> <br>
-<br> Personal Information <br> <br>
-First name: <?php echo $_POST["primary"]; ?><br>
-Middle initial: <?php echo $_POST["secondary_subject"]; ?> <br>
-Last name: <?php echo $_POST["weather_selector"]; ?> <br>
-Bday: <?php echo $_POST["datepicker"]; ?> <br>
-Gender: <?php echo $_POST["gender_selector"]; ?> <br>
-<br>
-Skills
-<br>
-Skill 1: <?php echo $_POST["skill_1"]; ?> <br> 
-Skill 2: <?php echo $_POST["skill_2"]; ?> <br>
-Skill 3: <?php echo $_POST["skill_3"]; ?> <br>
-Skill 4: <?php echo $_POST["skill_4"]; ?> <br>
-<br>
-Bio: <?php echo $_POST["bio"]; ?> <br>
-<br>
-Educational profile <br> <br>
-Current school: <?php echo $_POST["current_school"]; ?> <br>
-Current Educational Attainment: <?php echo $_POST["cur_educ_at"]; ?> <br>
-Course/Strand: <?php echo $_POST["cor_str"]; ?> <br>
-Specialization: <?php echo $_POST["specialization"]; ?> <br>
-Learning style: <?php echo $_POST["ls"]; ?> <br>
-Phone number: <?php echo $_POST["phone_num"]; ?> <br>
-<br>
-Work Profile
-<br> <br>
-Current work: <?php echo $_POST["current_work"]; ?> <br>
+
+<h2>Prompt Result</h2> <br>
+<!-- add spacing -->
+Copy and paste this on Dall-E: <br> <br><?php echo $_POST["primary"]; ?> <?php echo str_repeat('&nbsp;'); ?> <?php echo $_POST["second"]; ?> <?php echo $_POST["backdrop"]; ?> <?php echo $_POST["weather_selector"]; ?> <?php echo $_POST["monochrome_analog"]; ?> <?php echo $_POST["monochrome_mod"]; ?> <?php echo $_POST["colored_analog"]; ?> <?php echo $_POST["digital"]; ?> <?php echo $_POST["instruction"]; ?> <?php echo $_POST["textured_3d"]; ?> <?php echo $_POST["cartoon"]; ?> <?php echo $_POST["animated"]; ?> <?php echo $_POST["early"]; ?> <?php echo $_POST["renais"]; ?> <?php echo $_POST["mod_art"]; ?> <?php echo $_POST["3d_art"]; ?> <?php echo $_POST["hum_tool"]; ?> <?php echo $_POST["placexspace"]; ?> <?php echo $_POST["papandext"]; ?> <?php echo $_POST["cerxglass"]; ?> <?php echo $_POST["emo"]; ?> <?php echo $_POST["siz"]; ?> <?php echo $_POST["punk"]; ?> <?php echo $_POST["prox"]; ?> <?php echo $_POST["pos"]; ?> <?php echo $_POST["lense"]; ?> <?php echo $_POST["light"]; ?> <?php echo $_POST["artlit"]; ?> <?php echo $_POST["film"]; ?>
 
 </body>
 </html> 
